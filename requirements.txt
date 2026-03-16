@@ -1,0 +1,5 @@
+# billing v1
+sls-shared @ git+https://github.com/SLS-Systems/sls-shared.git@main
+uvicorn[standard]==0.34.3
+pydantic-settings==2.9.1
+stripe==12.2.0
