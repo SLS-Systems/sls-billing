@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 from app.routers import billing
 
-app = FastAPI(title="SLS Billing", version="1.0.0", docs_url=None, redoc_url=None)
+app = FastAPI(title="CI Billing", version="1.0.0", docs_url=None, redoc_url=None)
 
 
 @app.get("/health")
@@ -12,4 +12,4 @@ async def health():
 
 app.include_router(billing.router, prefix="/api/v1")
 
-print(f"[SLS Billing] Registered {len(app.routes)} routes")
+print(f"[CI Billing] Registered {len(app.routes)} routes")
